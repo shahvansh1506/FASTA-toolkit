@@ -9,9 +9,10 @@
 
 from utils import *
 
-file = open("sample.fasta","rb")
+with open("sample.fasta","rb") as f:
 
-sequences = read_fasta(file)
+    sequences = read_fasta(f)
+
 
 for name, seq in sequences.items():
 

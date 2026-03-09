@@ -16,9 +16,9 @@ The toolkit allows researchers, students, and developers to perform **common DNA
 
 🚀 **Try the application online**
 
-👉 https://YOUR-APP-LINK
+👉 http://localhost:8503/
 
-*(Replace this with your deployed Streamlit link)*
+
 
 ---
 
