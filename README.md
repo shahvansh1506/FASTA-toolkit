@@ -16,7 +16,7 @@ The toolkit allows researchers, students, and developers to perform **common DNA
 
 🚀 **Try the application online**
 
-👉 http://localhost:8503/
+👉 fasta-toolkit-hefppy6xxdky5r2qqnwljk
 
 
 
