@@ -110,3 +110,20 @@ def find_orfs(sequence):
                     break
 
     return orfs
+
+def color_sequence(seq):
+
+    color_map = {
+        "A": "green",
+        "T": "red",
+        "G": "orange",
+        "C": "blue"
+    }
+
+    colored = ""
+
+    for base in seq:
+        color = color_map.get(base.upper(), "black")
+        colored += f"<span style='color:{color}; font-weight:bold'>{base}</span>"
+
+    return colored

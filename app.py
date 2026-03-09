@@ -150,3 +150,17 @@ ATGCGTATATATCGCGCGCGATATATATCGCGCGCGCTGA
 """
 
 st.code(example)
+
+# SEQUENCE VISUALIZER
+st.header("Sequence Visualizer 🧬")
+
+show_seq = st.checkbox("Show Colored DNA Sequence")
+
+if show_seq:
+
+    colored_seq = color_sequence(seq)
+
+    st.markdown(
+        f"<div style='font-family:monospace; font-size:16px'>{colored_seq}</div>",
+        unsafe_allow_html=True
+    )
