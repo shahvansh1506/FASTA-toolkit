@@ -1,116 +1,234 @@
 # FASTA Toolkit 🧬
 
-A simple bioinformatics web application built with **Python and Streamlit** that allows users to analyze DNA sequences from FASTA files.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-red)
+![Bioinformatics](https://img.shields.io/badge/Field-Bioinformatics-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-black)
 
-This toolkit performs common sequence analysis tasks such as GC content calculation, transcription, translation, and visualization.
+A lightweight **bioinformatics toolkit built with Python and Streamlit** for analyzing DNA sequences from FASTA files.
 
----
-
-## 🚀 Live App
-
-*(Add your Streamlit deployment link here once deployed)*
-
-Example:
-
-Live Demo: https://fasta-toolkit-8uzhqbuxv4tcgb7y8oeqf9.streamlit.app/
+The toolkit allows researchers, students, and developers to perform **common DNA sequence analysis tasks quickly through an interactive web interface**.
 
 ---
 
-## 📌 Features
+# 🌐 Live Demo
+
+🚀 **Try the application online**
+
+👉 https://YOUR-APP-LINK
+
+*(Replace this with your deployed Streamlit link)*
+
+---
+
+# 📸 Application Preview
+
+![FASTA Toolkit Demo](screenshots/demo.png)
+
+---
+
+# 🚀 Features
+
+## 📂 FASTA File Processing
 
 * Upload FASTA files
-* Calculate **sequence length**
-* Calculate **GC content**
-* **DNA → RNA transcription**
-* **DNA → Protein translation**
-* **GC content distribution visualization**
-* Interactive web interface using **Streamlit**
+* Parse multiple sequences
+* Select sequences interactively
 
----
+## 🧪 Sequence Analysis Tools
 
-## 🧬 Example FASTA Input
+* Sequence length calculation
+* GC content calculation
+* DNA → RNA transcription
+* Reverse complement generation
+* DNA → Protein translation
 
-> sequence_1
-> ATGCGTACGTAGCTAGCTAG
-> sequence_2
-> ATCGATCGATCGATCGATCG
+## 🔍 Pattern Analysis
 
----
+* **Motif Finder**
+  Search specific DNA motifs within sequences.
 
-## 📊 Output
+* **ORF Finder**
+  Detect potential open reading frames that may represent genes.
 
-The application provides:
+## 📊 Visualization
 
-* Sequence statistics
-* RNA transcript
-* Protein translation
 * GC content histogram
+* GC content comparison bar chart
+
+## 📥 Data Export
+
+* Download GC content analysis as CSV
 
 ---
 
-## 🛠 Technologies Used
+# 🧬 Example FASTA File
 
-* Python
-* Streamlit
-* Pandas
-* Matplotlib
+A sample FASTA file is included in the repository.
 
----
+`sample.fasta`
 
-## 📂 Project Structure
+```
+>Human_gene_example
+ATGCGTACGATCGATCGATCGTAGCTAGCTAGCTAGCTAGCTAA
 
-FASTA-toolkit
-│
-├── app.py           # Main Streamlit application
-├── sample.fasta     # Example FASTA file
-├── README.md        # Project documentation
-└── requirements.txt # Required Python libraries
+>Mouse_gene_example
+ATGCGTATATATCGCGCGCGATATATATCGCGCGCGCTGA
+```
 
 ---
 
-## ⚙ Installation (Run Locally)
+# 🛠 Technologies Used
+
+| Technology | Purpose                     |
+| ---------- | --------------------------- |
+| Python     | Core programming language   |
+| Streamlit  | Interactive web application |
+| Pandas     | Data handling               |
+| Matplotlib | Data visualization          |
+
+---
+
+# 📦 Installation
 
 Clone the repository:
 
+```
 git clone https://github.com/shahvansh1506/FASTA-toolkit.git
+```
 
-Move into the project folder:
+Navigate to the project folder:
 
+```
 cd FASTA-toolkit
+```
 
-Install required libraries:
+Install dependencies:
 
+```
 python -m pip install -r requirements.txt
+```
+
+---
+
+# ▶ Running the Web Application
 
 Run the Streamlit app:
 
+```
 streamlit run app.py
+```
+
+If Streamlit is not recognized:
+
+```
+python -m streamlit run app.py
+```
+
+The application will open at:
+
+```
+http://localhost:8501
+```
 
 ---
 
-## 📈 Future Improvements
+# 🖥 Command Line Version
 
-Possible upgrades:
+You can also run the command-line analysis tool:
 
-* Reverse complement generator
-* Motif finding
-* Sequence alignment tools
-* Export results as CSV
+```
+python main.py
+```
+
+This will analyze sequences directly in the terminal.
+
+---
+
+# 📁 Project Structure
+
+```
+FASTA-toolkit
+│
+├── screenshots
+│      └── demo.png
+│
+├── sample.fasta
+│
+├── app.py              # Streamlit web application
+├── main.py             # Command-line FASTA analyzer
+├── utils.py            # Core bioinformatics functions
+│
+├── requirements.txt    # Python dependencies
+└── README.md
+```
+
+---
+
+# 📊 Toolkit Capabilities
+
+| Tool               | Description                         |
+| ------------------ | ----------------------------------- |
+| FASTA Reader       | Parses multi-sequence FASTA files   |
+| GC Content         | Calculates GC percentage            |
+| DNA → RNA          | Converts DNA to RNA                 |
+| Reverse Complement | Generates complementary DNA strand  |
+| DNA Translation    | Converts DNA to protein sequence    |
+| Motif Finder       | Detects DNA motifs                  |
+| ORF Finder         | Identifies potential coding regions |
+| GC Visualization   | Graphical GC content analysis       |
+
+---
+
+# 🎯 Purpose of the Project
+
+This toolkit was created as a **bioinformatics learning and portfolio project** demonstrating:
+
+* Biological sequence analysis
+* Implementation of bioinformatics algorithms
+* Scientific data visualization
+* Development of interactive scientific web applications
+
+---
+
+# ⭐ Future Improvements
+
+Planned upgrades:
+
+* Sequence alignment (Needleman–Wunsch algorithm)
 * Codon usage analysis
+* ORF visualization
+* Multi-sequence comparison
+* Genome browser style visualization
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Vansh Shah**
 
-M.Sc Bioinformatics Student
-Interested in Bioinformatics, Genomics and Computational Biology.
+GitHub Profile
+https://github.com/shahvansh1506
 
-GitHub: https://github.com/shahvansh1506
+Project Repository
+https://github.com/shahvansh1506/FASTA-toolkit
 
 ---
 
-## ⭐ Support
+# 🤝 Contributing
 
-If you like this project, consider giving it a **star ⭐ on GitHub**.
+Contributions are welcome.
+
+If you'd like to improve the toolkit:
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Submit a pull request
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**.
